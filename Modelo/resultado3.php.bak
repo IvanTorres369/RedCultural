@@ -1,0 +1,199 @@
+<?php
+session_start();
+error_reporting(0);
+$var = $_SESSION['id_usuario'];
+if($var == null || $var = ""){
+	echo "NO AUTORIZADO";
+	die();
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cursos</title>
+	<link rel="icon" href="../img/delta.ico">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/jquery.bxslider.css">
+	<script src="../js/modernizr.custom.js"></script>
+</head>
+<body>
+
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button  style="color: green" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+					<a class="navbar-brand animate" href="../Vista/vistausuario.php"><img src="../img/delta.png" alt="logo1"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right animate">
+					<li><a href="../Vista/vistausuario.php"></a></li>
+						<li><a href="../Vista/vistausuario.php">Mi Perfil</a></li>
+						<li><a href="../Vista/diccionario.html">Traductor</a></li>
+						<li><a href="../Vista/cursos.php">Lecciones</a></li>
+						<li><a href="../Vista/intro_cursos.php">Cursos</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+</body>
+<section id="seccion">
+			<div class="branded-section numbers">
+				<div class="masked">
+					<div class="container">
+						<div class="heading">
+							<h2>Lección 3 Animales y cosas (Yolkamej y Tlanetia)</h2>
+							<p>Escribe la palabra en español que creas correcta.</p>
+						</div>
+		
+		<table id="tabla" style="display: relative;
+       width: 80%; height: 100%; margin-left: 85px;">
+		<th>
+			
+			<?php
+			$r11 = $_POST['P11'];
+			$r12 = $_POST['P12'];
+			$r13 = $_POST['P13'];
+			$r14 = $_POST['P14'];
+			$r15 = $_POST['P15'];
+			$r16 = $_POST['P16'];
+			$r17 = $_POST['P17'];
+			$r18 = $_POST['P18'];
+			$r19 = $_POST['P19'];
+			$r20 = $_POST['P20'];
+			
+			$r21 ="Mistontli";
+			$r22 ="Itskuintli";
+			$r23 ="Uilotl";
+			$r24 ="Michkua";
+			$r25 ="Kauayot";
+			$r26 ="Tekonali";
+			$r27 ="Amamachiotl";
+			$r28 ="Tlaxikipili";
+			$r29 ="Kuikuiltik";
+			$r30 ="Tetlaixpoluili";
+        
+	if($_POST['P11']==null|$_POST['P12']==null|$_POST['P13']==null|$_POST['P14']==null|$_POST['P15']==null|$_POST['P16']==null|$_POST['P17']==null|$_POST['P18']==null|$_POST['P19']==null|$_POST['P20']==null){
+			echo"Llena todas las preguntas!!";
+		}
+		
+	 if(isset($_POST['terminar'])&&$_POST['P11']!=null&&$_POST['P12']!=null&&$_POST['P13']!=null&&$_POST['P14']!=null&&$_POST['P15']!=null&&$_POST['P16']!=null&&$_POST['P17']!=null&&$_POST['P18']!=null&&$_POST['P19']!=null&&$_POST['P20']!=null){
+		
+		if($_POST['P11']==$r21){
+			$r11=1;
+		}else{
+			$r11=0;
+		}
+		if($_POST['P12']==$r22){
+			$r12=1;
+		}else{
+			$r12=0;
+		}
+		if($_POST['P13']==$r23){
+			$r13=1;
+		}else{
+			$r13=0;
+		}
+		if($_POST['P14']==$r24){
+			$r14=1;
+		}else{
+			$r14=0;
+		}
+		if($_POST['P15']==$r25){
+			$r15=1;
+		}else{
+			$r15=0;
+		}
+		if($_POST['P16']==$r26){
+			$r16=1;
+		}else{
+			$r16=0;
+		}
+		if($_POST['P17']==$r27){
+			$r17=1;
+		}else{
+			$r17=0;
+		}
+		if($_POST['P18']==$r28){
+			$r18=1;
+		}else{
+			$r18=0;
+		}
+		if($_POST['P19']==$r29){
+			$r19=1;
+		}else{
+			$r19=0;
+		}
+		if($_POST['P20']==$r30){
+			$r20=1;
+		}else{
+			$r20=0;
+		}
+		
+		
+        $resultado = $r11+$r12+$r13+$r14+$r15+$r16+$r17+$r18+$r19+$r20;
+        if($resultado <= 7){echo "Has reprobado el examen (".$resultado."/10)";}
+        if ($resultado>=8){echo "Has aprobado el examen! (".$resultado."/10)";
+		echo '</br>Continua con el siguinete memorama<br>';
+		echo '<br></br><a href="../a-juego/memorama.html">Ir a la Actividad 3</a>';
+		}
+		
+        echo "<br></br>Tu resultado es $resultado";
+		}
+		?>		
+					
+		
+		</th>
+		</table>
+	
+			
+			<div class="form-group commands">
+			<a href="../Vista/leccion3.php" class="social-list" style="color:white">Volver a intentar</a>
+		    
+			</form>
+			</div>
+				</div>
+			</div>
+		</section>
+<footer>
+			<div class="container">
+				<p>&copy; Copyright <a href="#" style="color: green">RedCultural</a> 2022 Derechos Reservador</p>
+				<ul class="social-list">
+					
+				</ul>
+				<a href="#" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+				</a>
+			</div>
+		</footer>
+		</div>
+	<!-- Load all jsavascrip files -->
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../js/jquery.label_better.js"></script>
+	<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="../js/jquery.easypiechart.js"></script>
+	<script type="text/javascript" src="../js/jquery.inview.js"></script>
+	<script type="text/javascript" src="../js/countUp.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="../js/grid.js"></script>
+	<script>
+	$(function() {
+		Grid.init();
+	});
+	</script>
+</html>
