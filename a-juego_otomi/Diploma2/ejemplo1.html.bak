@@ -1,0 +1,32 @@
+<?php
+session_start();
+error_reporting(0);
+$var = $_SESSION['id_usuario'];
+if($var == null || $var = ""){
+	header("Location:../index.html");
+	die();
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="DiplomaRC.css">
+        <title>Diploma</title>
+    </head>
+    <body background="cult1.jpg">
+       <div class="div"><br></br><br>
+          <div class="ins"><h2 class="inst">RED CULTURAL</h2></div>
+          <div class="log"><img class="img" width="100px" height="100px" src="logo1.jpg"></div>
+           <p class="tex">Este diploma se otorga a: </p>
+          <p class="tex">¡Le otorga un diploma! <?php
+						echo $_SESSION['nombre']; ?> </p><br  />
+           <p class="tex1">Por haber concluido con exito el primer curso básico de la lengua OTOMÍ</p>
+           <div class="f1"><p class="firma1">UNIVERSIDAD TECNOLÓGICA DE NEZAHUALCOYOTL</p></div>
+           <div class="f2"><p class="firma2">DELTA9</p></div><br></br><br></br><br></br><br><br></br><br></br><br></br>
+		   <button onclick="window.print();" class="btn btn-primary"> Imprimir </button>
+			<form action="../../Vista/intro_cursos.php">
+							<button  type="submit" id="submit" class="btn btn-primary">Terminar Curso</button>
+       </div>
+    </body>
+</html>

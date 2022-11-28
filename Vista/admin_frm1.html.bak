@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Formulario de Registro">
+		<meta name="author" content="Formulario">
+		<link rel="stylesheet" href="../css/estilpro.css">
+		<link rel="icon" href="../img/delta.ico">
+		<title>Inicia Usuario</title>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/font-awesome.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/jquery.bxslider.css">
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	<body>
+
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+					<a class="navbar-brand animate" href="../index.html"><img src="../img/delta.png" alt="logo"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right animate">
+					
+						<li><a href="diccionario1.html">Diccionario</a></li>
+						<li><a href="aporta.html">Aportaciones</a></li>
+						<li><a href="curso.html">Curso</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+		</body>
+		<section id="seccion2">
+		<div class="branded-section numbers">
+				<div class="masked">
+					<div class="container">
+						<div class="heading">
+			<div class="login-wrap">
+				<div class="login-html">
+					<div class="login-form">
+							<h1 class="search_title">Registrar Admin!</h1>
+							<form id="search_form" class="search_form" action="../Control/administradorCtrl.php" method="POST">									
+					<fieldset>
+					    <div class="group">
+                        <input name="id_admin" type="text" class="input" id="id_admin" placeholder="Clave Administrador..." required="">
+                     </div>
+					 </fieldset>
+					<fieldset>
+					    <div class="group">
+                        <input name="nombre" type="text" class="input" id="nombre" placeholder="Nombre..." required="">
+                     </div>
+					 </fieldset>
+					<fieldset>
+					    <div class="group">
+                        <input name="apellido_pat" type="text" class="input" id="apellido_pat" placeholder="Apellido Paterno..." required="">
+                     </div>
+					 </fieldset>
+					 <fieldset>
+					    <div class="group">
+                        <input name="apellido_mat" type="text" class="input" id="apellido_mat" placeholder="Apellido Materno..." required="">
+                     </div>
+					 </fieldset>
+					<fieldset>
+					    <div class="group">
+                        <input name="correo" type="text" class="input" id="correo" placeholder="Correo..." required="">
+                     </div>
+					 </fieldset>
+					 <fieldset>
+					    <div class="group">
+                        <input name="contra" type="password" class="input" id="contra" placeholder="Contraseña..." required="">
+                     </div>
+					 </fieldset>				
+					<input type="submit"  value="Registrar" name="registrar" class="btn btn-primary">
+				
+				  </form> 
+		</div>
+	</div>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+  </section>
+  <footer>
+			<div class="container">
+				<p>&copy; Copyright <a href="http://graphberry.com?ref=smak">RedCultural</a> 2022 Derechos Reservador</p>
+				
+				<a href="#home" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+				</a>
+			</div>
+		</footer>
+</html>

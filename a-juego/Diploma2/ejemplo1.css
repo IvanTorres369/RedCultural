@@ -1,0 +1,127 @@
+@font-face{
+    font-family: 'institucion';
+    src: url(CAMPUS PERSONAL USE.ttf)
+}
+body{
+    background-color: #ECEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-primary {
+	color: #000;
+	background: #ffe600;
+	border: 1px solid #ffe600;
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	border: none;
+}
+
+.btn-primary:hover {
+	background: #ffe600;
+	color: #000;
+	border: none;
+}
+
+.btn-primary:before {
+	content: '';
+	position: absolute;
+	border: #ffe600 solid 4px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: top, right, bottom, left;
+	transition-property: top, right, bottom, left;
+}
+
+.btn-primary:hover:before {
+	top: -8px;
+	right: -8px;
+	bottom: -8px;
+	left: -8px;
+}
+
+.div{
+    background-image: url( fondo1.jpg);
+    background-size: 800px 500px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    border: 15px double;
+    position: absolute;
+    
+    
+     }
+.logo{
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 20px 20px 20px 20px;
+    border-radius: 50px;
+    
+}
+.log{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+}
+
+.inst{
+    font-family: 'institucion';
+    padding: 20px;
+    width: 230;
+    margin: 50px 50px 20px 265px;
+}
+.tex{
+    
+    font-family:roughbrush;
+    padding: 20px;
+    width: 230;
+    margin: 20px 265px 20px 265px;
+}
+.nom{
+    font-family:roughbrush;
+    padding: 20px;
+    width: 230;
+    margin: 20px 265px 20px 265px;
+    text-decoration: underline black;
+}
+.tex1{
+    font-family:roughbrush;
+    padding: 20px;
+    width: 260;
+    margin: 20px 265px 20px 265px;
+}
+.f1{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+}
+.firma1{
+    
+    
+}
+.f2{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.firma2{
+    
+    
+}

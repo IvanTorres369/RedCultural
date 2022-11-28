@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="DiplomaRC.xsl" type="text/xsl"?>
+<diploma>
+	<datos>
+		<institucion>RED CULTURAL</institucion>
+		<logo>logo1.jpg</logo>
+		<nombre>Usted</nombre>
+		<firma1>UNIVERSIDAD TECNOLOGICA DE NEZAHUALCOYOTL</firma1>
+		<firma2>DELTA9</firma2>
+	</datos>
+</diploma>

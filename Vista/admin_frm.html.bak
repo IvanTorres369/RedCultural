@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Formulario de Inicio">
+		<meta name="author" content="Formulario">
+		<link rel="icon" href="../img/delta.ico">
+		<link rel="stylesheet" href="../css/estilpro.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/font-awesome.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/jquery.bxslider.css">
+		<script src="../js/modernizr.custom.js"></script>
+		<title> Admin </title>
+	</head>
+	<body >
+
+	
+	
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button style="color: green" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+					<a class="navbar-brand animate" href="../index.html"><img src="../img/delta.png" alt="delta"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right animate">
+			            <li></li>
+						<li><a href="../diccionario1.html">Traductor</a></li>
+						<li><a href="../intro_cursos.html">Cursos</a></li>	
+					
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+		</body>
+
+		<section id="seccion2">
+		<div class="branded-section numbers" >
+				<div class="masked" >
+					<div class="container" style=" width: 280px; margin-top:0px;margin-left: 35px;">
+						<div class="heading" >
+			<div class="login-wrap1" >
+				<div class="login-html" style=" width: 250px; box-shadow: none">
+					<div class="login-form" >
+							<h1 class="search_title" style="margin-top:-10px" >Inicia Sesión!</h1>
+							<form id="search_form" class="search_form" action="../Modelo/sesion_admin.php">									
+					<fieldset>
+					    <div class="group">
+                        <input  style=" width: 115px" name="id_admin" type="text" class="input" id="id_admin" placeholder="Clave Administrador..." required="">
+                     </div>
+					 </fieldset>
+					 <fieldset>
+					    <div class="group">
+                        <input  style=" width: 115px" name="contra" type="password" class="input" id="contra" placeholder="Contraseña..." required="">
+                     </div>
+					 </fieldset>				
+					<input style="position: center" type="submit"  value="Iniciar" name="iniciar" class="btn btn-primary outline-outward">
+				
+				  </form> <br    /><br  /><br  />
+		</div>
+	</div>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+  </section>
+ <footer>
+			<div class="container">
+				<p>&copy; Copyright <a href="#" style="color: green">RedCultural</a> 2022 Derechos Reservados</p>
+				
+				<a href="#" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<!-- Load all jsavascrip files -->
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../js/jquery.label_better.js"></script>
+	<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="../js/jquery.easypiechart.js"></script>
+	<script type="text/javascript" src="../js/jquery.inview.js"></script>
+	<script type="text/javascript" src="../js/countUp.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="../js/grid.js"></script>
+	<script>
+	$(function() {
+		Grid.init();
+	});
+	</script>
+</body>
+</html>

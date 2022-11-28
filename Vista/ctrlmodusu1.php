@@ -1,0 +1,76 @@
+<?php
+session_start();
+error_reporting(0);
+$var = $_SESSION['id_usuario'];
+if($var == null || $var = ""){
+	header("Location:index.html");
+	die();
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modificar Cuenta</title>
+	<link rel="icon" href="../img/delta.ico">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/jquery.bxslider.css">
+	<script src="../js/modernizr.custom.js"></script>
+</head>
+<body>
+		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+					<a class="navbar-brand animate" href="vistausuario.php"><img src="../img/delta.png" alt="logo1"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right animate">
+						<li><a href="vistausuario.php"></a></li>
+						<li><a href="vistausuario.php">Mi Perfil</a></li>
+						<li><a href="diccionario.html">Traductor</a></li>
+						<li><a href="intro_cursos.php">Cursos</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+</body>
+<section>
+<div class="branded-section contact-form">
+				<div class="masked">
+					<div class="container">
+						<div class="heading">
+							<br    /><br    /><h1 class="light-font"></h1><br  /><br  />
+
+						
+						<h1 class="light-font">¡Sus datos se cambiaron con exito. <br  />Inicie nueva sesión! </h1>
+						<a href="../Modelo/cerrarsesion.php" class="btn btn-primary outline-outward">Cerrar Sesión</a>
+	</div>
+				</div>
+			</div>
+		</div>
+</section>				
+<footer>
+	<div class="container">
+		<p>&copy; Copyright <a href="#" style="color:green">RedCultural</a> 2022 Derechos Reservador</p>
+				<ul class="social-list">
+					
+				</ul>
+				<a href="#" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+				</a>
+			</div>
+		</footer>
+</html>

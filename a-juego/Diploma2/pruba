@@ -1,0 +1,12 @@
+<table class="tabla" background="foto.jpg" >
+             <tr class="th"><th>
+                   
+                    <p align="center" class="e1">RED CULTURAL</p>
+                    <h5 align="center" class="e2">Este diploma se otorga a</h5>
+		            <h3 align="center" class="e3">Nombre: <xsl:value-of select="diploma/datos/nombre"/><xsl:value-of select="diploma/datos/apellidop"/><xsl:value-of select="diploma/datos/apellidom"/></h3>
+                    <h5 align="center" class="e4">Por haber concluido de manera exitosa el curso basico de lengua NAHUATL</h5>
+                    <p align="left" class="e5"><xsl:value-of select="diploma/datos/firma1"/></p>
+                   <img class="e7" src="{$imagen}" width="100px" height="100"/>
+                   
+             </th></tr><br></br>
+	 	 </table>
